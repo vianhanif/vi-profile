@@ -1,0 +1,32 @@
+@import "../../mixins.scss";
+
+#home {
+  @include tablet {
+    .profile {
+      order: 1;
+    }
+    .skill {
+      order: 2;
+    }
+    .travel {
+      order: 3;
+    }
+    .timeline {
+      order: 4;
+    }
+    .other {
+      order: 5;
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &-soon {
+      @extend .info;
+      color: #BABCD9;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "./mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #303F9F;
+}
+
+.sectioned {
+  margin-top: 30px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.control-arrow {
+  border-radius: 8px;
+}
+
+.slide {
+  background: none !important;
+}

@@ -1,0 +1,41 @@
+.education {
+  h4 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(#fafafa, .9);
+    margin-bottom: 10px;
+  }
+  .panel {
+    background-color: #FFC107;
+    box-shadow: -10px 10px 80px rgba(#000,.3);
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    .yearly {
+      list-style: none;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      tr {
+        display: flex;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        .year {
+          color: rgba(#795548, .9);
+          font-size: 14px;
+          font-weight: 300;
+          padding-right: 10px;
+          min-width: 90px;
+        }
+        .educate {
+          color: rgba(#000,.69);
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

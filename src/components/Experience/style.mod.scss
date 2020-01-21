@@ -1,0 +1,176 @@
+@import "../../styles/mixins.scss";
+
+.experience {
+  h4 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(#fafafa, .9);
+    margin-bottom: 10px;
+  }
+  .panel {
+    background-color: #fafafa;
+    box-shadow: -10px 10px 80px rgba(#000,.3);
+    border-radius: 8px;
+    width: 100%;
+    height: 92%;
+    margin-bottom: 40px;
+    .exp_image {
+      @include mobile {
+        order: 1;
+      }
+      @include tablet {
+        order: 1;
+      }
+    }
+    .exp_desc {
+      @include mobile {
+        order: 2;
+      }
+      @include tablet {
+        order: 2;
+      }
+    }
+    .image {
+      border-radius: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 460px;
+      padding: 0px;
+      border: 0px;
+      @include tablet {
+        height: 300px;
+      }
+      @include mobile {
+        height: 200px;
+      }
+    }
+    .left {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .right {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+    .left, .right {
+      @include mobile {
+        border-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+      @include tablet {
+        border-radius: 8px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    }
+    .side {
+      padding: 15px;
+      @include tablet {
+        order: 1;
+      }
+    }
+    .year {
+      color: rgba(#000,.7);
+      font-size: 18px;
+    }
+    .company {
+      color: rgba(#000,.9);
+      font-weight: 500;
+      font-size: 22px;
+      padding-top: 10px;
+    }
+    .description {
+      color: rgba(#000,.7);
+      font-size: 16px;
+      font-weight: normal;
+      padding-top: 20px;
+      line-height: 1.5;
+    }
+    .role {
+      color: rgba(#000,.8);
+      font-weight: 500;
+      font-size: 16px;
+      padding-top: 15px;
+    }
+    .rolename {
+      color: #304FFE;
+      font-weight: 500;
+      font-size: 20px;
+      padding-top: 1px;
+    }
+    .role_descripsion {
+      @extend .description;
+      padding-top: 10px;
+    }
+  }
+  .panel, .freelance {
+    .techs {
+      @extend .side;
+      padding-top: 0px;
+      .title {
+        color: rgba(#000,.8);
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 15px;
+      }
+      ul {
+        overflow-x: hidden;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        li {
+          display: flex;
+          align-items: center;
+          padding-left: 6px;
+          padding-right: 6px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          .image {
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+              height: inherit;
+              width: auto;
+            }
+          }
+          p {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            color: #2196F3;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .freelance {
+    .techs {
+      padding: 0px;
+    }
+    @extend .panel;
+    padding: 20px;
+    .timespent {
+      color: rgba(#000,.7);
+      font-size: 18px;
+    }
+    .project_name {
+      color: rgba(#000,.9);
+      font-weight: 500;
+      font-size: 18px;
+      padding-top: 15px;
+    }
+    .description {
+      @extend .description;
+    }
+  }
+}

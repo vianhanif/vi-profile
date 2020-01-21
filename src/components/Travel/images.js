@@ -1,0 +1,22 @@
+export default [
+  require('../../images/image9.jpg'),
+  require('../../images/image1.jpg'),
+  require('../../images/image2.jpg'),
+  require('../../images/image3.jpg'),
+  require('../../images/image4.jpg'),
+  require('../../images/image5.jpg'),
+  require('../../images/image6.jpg'),
+  require('../../images/image7.jpg'),
+  require('../../images/image8.jpg'),
+  require('../../images/image10.jpg'),
+  require('../../images/image11.jpg'),
+  require('../../images/image12.jpg'),
+  require('../../images/image13.jpg'),
+  require('../../images/image14.jpg'),
+  require('../../images/image15.jpg'),
+  require('../../images/image16.jpg'),
+  require('../../images/image17.jpg'),
+  require('../../images/image18.jpg'),
+  require('../../images/image19.jpg'),
+  require('../../images/image20.jpg')
+]

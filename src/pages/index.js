@@ -1,21 +1,68 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react'
+import Emoji from 'react-emoji-render'
+import {
+  MyName,
+  Education,
+  Travel,
+  Skill,
+  Achievement,
+  Experience,
+  SEO
+} from '../components'
+import '../styles/pages/Home/index.scss'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export default class Home extends Component {
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  static propTypes = {
 
-export default IndexPage
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    };
+  }
+
+  render() {
+    return (
+      <div className="contained page" id="home">
+        <SEO title="Home"/>
+        <div className="col profile">
+          <div className="col-40">
+            <MyName/>
+            <Skill className="not-desktop"/>
+            <Education/>
+          </div>
+          <div className="col-60 only-desktop">
+            <Travel/>
+          </div>
+        </div>
+        <div className="col travel not-desktop">
+          <div className="col-100">
+            <Travel/>
+          </div>
+        </div>
+        <div className="col sectioned other">
+          <div className="col-70">
+            <Achievement/>
+          </div>
+          <div className="col-30 only-desktop">
+            <Skill/>
+          </div>
+        </div>
+        <div className="col sectioned other">
+          <div className="col-100">
+            <Experience/>
+          </div>
+        </div>
+        <div className="col sectioned other">
+          <div className="col-100">
+            <p className="info-soon">and more insight coming soon <Emoji text=":wink:"/></p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+}
